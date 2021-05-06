@@ -3,6 +3,9 @@
  */
 #masthead {
 	font-size: 1rem;
+	.mobile-nav-btn-sticky {
+		display: none;
+	}
 }
 .top-bar {
 	background-color: $primary;

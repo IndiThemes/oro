@@ -32,9 +32,10 @@
 			<?php do_action('oro_get_branding'); ?>
         </div>
         
-    	<button id="search-btn"><i class="fa fa-search"></i></button>
+    	<button class="search-btn"><i class="fa fa-search"></i></button>
 		
-		<button id="mobile-nav-btn" href="#menu" class="menu-link"><i class="fa fa-bars" aria-hidden="true"></i></button>
+		<button  href="#menu" class="menu-link mobile-nav-btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+		<button  href="#menu" class="menu-link mobile-nav-btn-sticky"><i class="fa fa-bars" aria-hidden="true"></i></button>
 		
 	</div>
  <?php

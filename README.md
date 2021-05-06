@@ -72,5 +72,10 @@ Just Install the Theme from the WordPress Repository.
 * v1.1.2
 	Fixed Search
 
+* v1.1.3
+	Layout Bugs Fixed
+	Navigation Bug Fixed
+	Search Fixed
+
 
 Good luck!

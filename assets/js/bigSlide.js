@@ -213,9 +213,9 @@
 
           e.preventDefault();
           if (controller.getState() === 'open') {
-            view.toggleClose();
+            view.toggleClose(e);
           } else {
-            view.toggleOpen();
+            view.toggleOpen(e);
           }
         });
 
@@ -289,12 +289,12 @@
       },
 
       // toggle the menu open
-      toggleOpen: function() {
+      toggleOpen: function(e) {
         settings.beforeOpen();
         controller.changeState();
         view.applyOpenStyles();
         menuLink.addClass(settings.activeBtn);
-        settings.afterOpen();
+        settings.afterOpen(e);
 
         // save the state
         if (settings.saveState) {
@@ -303,12 +303,12 @@
       },
 
       // toggle the menu closed
-      toggleClose: function() {
+      toggleClose: function(e) {
         settings.beforeClose();
         controller.changeState();
         view.applyClosedStyles();
         menuLink.removeClass(settings.activeBtn);
-        settings.afterClose();
+        settings.afterClose(e);
 
         // save the state
         if (settings.saveState) {

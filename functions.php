@@ -9,7 +9,7 @@
 
 if ( ! defined( 'ORO_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'ORO_VERSION', '1.1.2' );
+	define( 'ORO_VERSION', '1.1.3' );
 }
 
 if ( ! function_exists( 'oro_setup' ) ) :

@@ -5,7 +5,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 Requires at least: 5.5
 Tested up to: 5.6
 Requires PHP: 5.6
-Stable tag: 1.1.1
+Stable tag: 1.1.1.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -85,6 +85,11 @@ ORO is a WordPress Theme based on Material Design Guidelines by Google. Keeping 
 
 = 1.1.2 = 
 * Fixed Search
+
+= 1.1.3 =
+* Layout Bugs Fixed
+* Navigation Bug Fixed
+* Search Fixed
 
 == Credits ==
 

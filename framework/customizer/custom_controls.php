@@ -1,5 +1,5 @@
 <?php
-  if (class_exists('WP_Customize_Control')) {
+  if ( class_exists('WP_Customize_Control') ) {
     class Oro_Range_Value_Control extends WP_Customize_Control {
   	public $type = 'oro-range-value';
 

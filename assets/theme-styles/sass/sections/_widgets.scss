@@ -8,12 +8,14 @@
 		border: solid 1px alpha(black, -0.92);
 		border-radius: .8em;
 	}
-	h4.widget-title {
-		margin-top: 0;
-		margin-bottom: .75em;
-		#oro-before-content & {
+	#oro-before-content & {
+		margin-bottom: 0;
+		h4.widget-title {
 			text-align: center;
 		}
+	}
+	h4.widget-title {
+		margin-top: 0;
 	}
 	&.widget_search {
 		label {
@@ -202,8 +204,8 @@
 			}
 			
 			.recent-date {
-				font-size: .75em;
-				color: #ccc;
+				font-size: 0.8em;
+				color: #aaa;
 			}
 			a {
 				@include line-clamp(2);

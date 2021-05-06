@@ -8,13 +8,17 @@ jQuery(document).ready(function() {
 		searchInput	 = jQuery('.top_search_field'),
 		cancelSearch = jQuery('.cancel_search');
 	
-	jQuery('#search-btn').on('click', function() {
-		searchScreen.fadeIn(200);
+	jQuery('.search-btn').on('click', function() {
+		searchScreen.fadeIn(200, () => {
+			jQuery('body').hasClass('search-toggled') ?  '' : jQuery('body').addClass('search-toggled');
+		});
 		searchInput.focus();
 	});
 	
 	cancelSearch.on('click', function(e) {
-		searchScreen.fadeOut(200);
+		searchScreen.fadeOut(200, () => {
+			jQuery('body').hasClass('search-toggled') ?  jQuery('body').removeClass('search-toggled') : '';
+		});
 		jQuery('#search-btn').focus();
 	});
 	
@@ -26,16 +30,20 @@ jQuery(document).ready(function() {
 		jQuery(this).siblings('button.cancel_search').focus();
 	});
 	
+	
+	var clickedBtn;
 	// Navigation
 	jQuery('.menu-link').bigSlide({
 		easyClose	: true,
 		width		: '25em',
 		side		: 'right',
-		afterOpen	: function() {
+		saveState	: true,
+		afterOpen	: function(e) {
 				    	jQuery('#close-menu').focus();
+				    	clickedBtn = jQuery(e.target).parent();
 			    	},
-		afterClose: function() {
-				    	jQuery('#mobile-nav-btn').focus();
+		afterClose: function(e) {
+				    	clickedBtn.focus();
 			    }
     });
   
@@ -156,6 +164,7 @@ jQuery(document).ready(function() {
 					"opacity": "1"
 				});
 			} else {
+				jQuery('body').removeClass('has-sticky-menu');
 				stickyNav.css({
 			"transform": "translateY(-100%)",
 			"opacity": "0"
