@@ -76,6 +76,10 @@ Just Install the Theme from the WordPress Repository.
 	Layout Bugs Fixed
 	Navigation Bug Fixed
 	Search Fixed
+	
+* v1.1.4
+	Fixed the Sticky Navigation bug
+	Changed Upsell Link
 
 
 Good luck!

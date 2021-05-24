@@ -37,5 +37,21 @@ function oro_general_customize_register( $wp_customize ) {
             )
         )
     );
+    
+    $wp_customize->add_setting(
+		'oro_sticky_menu_enable', array(
+			'default'	=>	'',
+			'sanitize_callback'	=> 'oro_sanitize_checkbox'
+		)
+	);
+	
+	$wp_customize->add_control(
+		'oro_sticky_menu_enable', array(
+			'label'		=>	__('Enable Sticky Navigation', 'oro'),
+			'type'		=>	'checkbox',
+			'section'	=>	'oro_general_options',
+			'priority'	=>	30
+		)
+	);
 }
 add_action("customize_register", "oro_general_customize_register");

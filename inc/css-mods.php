@@ -65,6 +65,10 @@ function oro_custom_css() {
      $css .= '#masthead.full #top-wrapper {background-color: rgba(255,255,255,' . get_theme_mod('oro_full_header_nav_opacity', 1) . ')}';
 */
 	$css .= "}";
+	
+	if ( !get_theme_mod( 'oro_sticky_menu_enable' ) ) {
+		$css .= '#sticky-navigation {display: none;}';
+	}
 
      wp_add_inline_style( 'oro-main-style', wp_strip_all_tags($css) );
 

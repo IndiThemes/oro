@@ -44,7 +44,7 @@ require_once get_template_directory() . '/framework/customizer/header.php';
 require_once get_template_directory() . '/framework/customizer/layouts.php';
 require_once get_template_directory() . '/framework/customizer/footer.php';
 require_once get_template_directory() . '/framework/customizer/colors.php';
-require_once get_template_directory() . '/framework/customizer/upsell.php';
+require_once get_template_directory() . '/framework/customizer/button-section.php';
 
 /**
  * Render the site title for the selective refresh partial.
