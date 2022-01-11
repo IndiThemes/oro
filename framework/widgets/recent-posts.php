@@ -43,11 +43,16 @@ class oro_recent_posts extends WP_Widget {
 					$widget_query	=	new WP_Query( $widget_args );
 					
 					if ( $widget_query->have_posts() ) : ?>
-						<div class="oro-widget-posts <?php if ($align == 'horizontal') echo 'row is-horizontal'; ?>">
-						<?php
-		            		while ($widget_query->have_posts() ) : $widget_query->the_post(); ?>
-			            		<div class=" oro-widget-post row no-gutters <?php if ($align == 'horizontal') echo 'col-md-3'; ?>">
-				            		<div class="oro-widget-post-thumb <?php if( $align == 'vertical' ) echo 'col-md-3'; ?>">
+					
+					
+						<div class="oro-widget-posts <?php echo $align == 'horizontal' ? 'row is-horizontal align-items-start' : ''; ?>">
+							<?php
+		            		while ($widget_query->have_posts() ) : $widget_query->the_post();
+		            		?>
+		            		
+			            		<div class=" oro-widget-post row no-gutters <?php echo $align == 'horizontal' ? 'col-md-3' : 'align-items-center'; ?>">
+				            		
+				            		<div class="oro-widget-post-thumb <?php echo $align == 'horizontal' ? '' : 'col-md-4'; ?>">
 					            		<?php if ( has_post_thumbnail() ): ?>
 											<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('oro_list_thumb'); ?></a>
 										<?php
@@ -55,11 +60,13 @@ class oro_recent_posts extends WP_Widget {
 										?>	<a href="<?php the_permalink(); ?>"><img class="wp-post-image" src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/ph_list.png'); ?>"></a>
 										<?php endif; ?>
 				            		</div>
-				            		<div class="oro-widget-post-title <?php if( $align == 'vertical' ) echo 'col-md-9'; ?>">
-					            		<?php the_title( '<h5 class="entry-title"><a href="' . esc_url( get_permalink() ) . '">', '</a></h5>' ); ?>
+				            		
+				            		<div class="oro-widget-post-title <?php echo $align == 'horizontal' ? '' : 'col-md-8'; ?>">
+					            		<?php the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '">', '</a></h3>' ); ?>
 						            	<cite class="recent-date"><?php echo get_the_date('d F, Y'); ?></cite>
 				            		</div>
 			            		</div>
+			            		
 							<?php
 							endwhile;
 							?>

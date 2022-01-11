@@ -8,7 +8,7 @@ function oro_scripts() {
 	
 	wp_enqueue_script('jquery-ui-tabs');
 	
-	wp_enqueue_style( 'oro-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap', array(), ORO_VERSION );
+	wp_enqueue_style( 'oro-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap', array(), ORO_VERSION );
 
 	wp_enqueue_style( 'oro-main-style', esc_url(get_template_directory_uri() . '/assets/theme-styles/css/default.css'), array(), ORO_VERSION );
 	

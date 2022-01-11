@@ -179,13 +179,14 @@ body {
 			}
 			.entry-header {
 				font-size: .75em;
-				margin-top: 2em;
 				word-wrap: normal;
-				border-top: solid 1px alpha(black, -0.92);
 				.entry-title {
 					margin: 0;
-					padding-top: .6em;
-					line-height: 1.6em;
+					line-height: 1.2;
+					padding-top: 0.6em;
+					a {
+						font-size: 0.9em;
+					}
 				}
 			}
 		}

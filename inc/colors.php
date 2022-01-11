@@ -79,7 +79,8 @@ function oro_custom_colors() {
 				.widget.widget_oro_cat_slider .slide-title,
 				#comments .comment .reply a,
 				#colophon,
-				.widget.widget_oro_cat_slider .owl-nav button span
+				.widget.widget_oro_cat_slider .owl-nav button span,
+				.widget.widget_oro_cat_slider .owl-nav i
 				{background-color: ' . $theme_color . '}';
 				
 	$colors .= '#footer-sidebar .footer-content-svg path { fill: ' . $theme_color . '}';

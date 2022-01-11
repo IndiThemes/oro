@@ -44,7 +44,7 @@ html {
 body {
 	@extend %body-font;
 	line-height: 1.8em;
-	letter-spacing: .05em;
+	letter-spacing: .03em;
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
 }
@@ -60,6 +60,7 @@ h1, h2, h3, h4, h5, h6, .title-font {
 	font-weight: 400;
 	margin-bottom: 0.5rem;
 	line-height: 1.2;
+	letter-spacing: 0;
 }
 
 %bordered-hover {

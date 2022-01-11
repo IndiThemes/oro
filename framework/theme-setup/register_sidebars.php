@@ -12,8 +12,8 @@ function oro_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here.', 'oro' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h4 class="widget-title">',
-			'after_title'   => '</h4>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		)
 	);
 	
@@ -24,8 +24,8 @@ function oro_widgets_init() {
 			'description'   => esc_html__( 'This is the sidebar for Post Page. Add widgets here.', 'oro' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h4 class="widget-title">',
-			'after_title'   => '</h4>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		)
 	);
 	
@@ -36,8 +36,8 @@ function oro_widgets_init() {
 			'description'   => esc_html__( 'This is the sidebar for the Pages. Add widgets here.', 'oro' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h4 class="widget-title">',
-			'after_title'   => '</h4>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		)
 	);
 	
@@ -48,8 +48,8 @@ function oro_widgets_init() {
 			'description'   => esc_html__( 'This is the sidebar before Content in the Front Page. Add widgets here.', 'oro' ),
 			'before_widget' => '<section id="%1$s" class="widget container %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h4 class="widget-title">',
-			'after_title'   => '</h4>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		)
 	);
 	
@@ -60,8 +60,8 @@ function oro_widgets_init() {
 			'description'   => esc_html__( 'This is the sidebar after Content in the Front Page. Add widgets here.', 'oro' ),
 			'before_widget' => '<section id="%1$s" class="widget container %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h4 class="widget-title">',
-			'after_title'   => '</h4>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		)
 	);
 	
@@ -72,8 +72,8 @@ function oro_widgets_init() {
 			'description'   => esc_html__( 'Footer Sidebar Column 1', 'oro' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h4 class="widget-title">',
-			'after_title'   => '</h4>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		)
 	);
 
@@ -84,8 +84,8 @@ function oro_widgets_init() {
 			'description'   => esc_html__( 'Footer Sidebar Column 2', 'oro' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h4 class="widget-title">',
-			'after_title'   => '</h4>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		)
 	);
 
@@ -96,8 +96,8 @@ function oro_widgets_init() {
 			'description'   => esc_html__( 'Footer Sidebar Column 3', 'oro' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h4 class="widget-title">',
-			'after_title'   => '</h4>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		)
 	);
 
@@ -108,8 +108,8 @@ function oro_widgets_init() {
 			'description'   => esc_html__( 'Footer Sidebar Column 4', 'oro' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h4 class="widget-title">',
-			'after_title'   => '</h4>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
 		)
 	);
 }

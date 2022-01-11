@@ -25,7 +25,7 @@
 			</div>
 			<header class="entry-header">
 				<?php
-					the_title( '<h4 class="entry-title"><a href="' . esc_url( get_permalink() ) . '">', '</a></h4>' );
+					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
 				 ?>
 			</header><!-- .entry-header -->
 		</div>

@@ -11,7 +11,7 @@
 	background-color: $primary;
 	align-items: center;
 	justify-content: center;
-	padding: .4em;
+	padding: 0.4em 0;
 	button {
 		background: none;
 		color: white;
@@ -73,6 +73,7 @@
 }
 
 .site-branding {
+	margin-left: 1em;
 	.site-title {
 		margin: 0;
 	}

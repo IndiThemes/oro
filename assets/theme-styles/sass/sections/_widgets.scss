@@ -3,19 +3,21 @@
  */
 
 .widget {
-	padding: 1.5em;
+	padding: 1.2em;
 	#secondary & {
 		border: solid 1px alpha(black, -0.92);
 		border-radius: .8em;
 	}
 	#oro-before-content & {
 		margin-bottom: 0;
-		h4.widget-title {
+		.widget-title {
 			text-align: center;
 		}
 	}
-	h4.widget-title {
+	.widget-title {
 		margin-top: 0;
+		margin-bottom: 0.4em;
+		font-size: 1.6em;
 	}
 	&.widget_search {
 		label {
@@ -53,6 +55,7 @@
 					padding: .5em 1.2em;
 					font-size: .9em;
 					@include line-clamp(1);
+					font-weight: 500;
 					&:hover {
 						color: white;
 					}
@@ -126,44 +129,61 @@
 			border-radius: 1.2em;
 		}
 		.owl-nav {
+			position: absolute;
 			display: inline-block;
-			width: 100%;
 			text-align: center;
 			position: relative;
-			left: 2em;
+			width: 100%;
+			left: 0;
 			margin: auto;
-			overflow: hidden;
+			overflow: visible;
+			
 			button {
 				display: inline-block;
 				overflow: hidden;
-				margin: 10px 8px 0;
-				span {
-					padding: 0 .3em;
-					background-color: $primary;
-					color: white;
+				@include transform( translateY(-370%) );
+				&.owl-prev {
+					float: left;
+					border-radius: 0 0.6em 0.6em 0;
+				}
+				&.owl-next {
+					float: right;
+					border-radius: 0.6em 0 0 0.6em;
 				}
 			}
-			span {
-				font-size: 3em;
+			i {
+				font-size: 1.25em;
 				color: $primary;
+				padding: 0.3em;
+				background-color: $primary;
+				color: white;
+				@media (min-width: 768px) {
+					font-size: 2em;
+					
+				}
+				@media (min-width: 992px) {
+					font-size: 3em;
+				}
 			}
 		}
 		.slide-title {
 			position: absolute;
 			display: inline-block;
 			bottom: 10%;
-			max-width: 50%;
+			max-width: 61%;
 			background-color: $primary;
 			h3 {
 				display: inline-block;
 				margin: .5em .8em;
 				font-size: 1.2em;
 				@media screen and (min-width: 768px) {
-					font-size: 2em;
+					font-size: 1.8em;
+					#secondary & {
+						font-size: 1.2em;
+					}
 				}
  			}
 			a {
-				@include line-clamp(1);
 				color: white;
 			}
 		}
@@ -173,6 +193,7 @@
 		.entry-title {
 			margin: 0;
 			font-size: 1em;
+			line-height: 1.45em;
 		}
 		.is-horizontal {
 			.entry-title {
@@ -206,9 +227,6 @@
 			.recent-date {
 				font-size: 0.8em;
 				color: #aaa;
-			}
-			a {
-				@include line-clamp(2);
 			}
 		}
 	}

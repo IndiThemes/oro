@@ -95,6 +95,10 @@ ORO is a WordPress Theme based on Material Design Guidelines by Google. Keeping 
 * Fixed Sticky Navigation Bug
 * Changed Upsell Link
 
+= 1.1.5 =
+* Made Layout changes
+* Bug fixes
+
 == Credits ==
 
 * Images

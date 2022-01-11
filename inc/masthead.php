@@ -28,7 +28,7 @@
  
 	 <div class="top-bar row no-gutters">
 		 
-        <div class="site-branding col">
+        <div class="site-branding col-auto mr-auto">
 			<?php do_action('oro_get_branding'); ?>
         </div>
         

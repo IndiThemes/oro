@@ -80,6 +80,10 @@ Just Install the Theme from the WordPress Repository.
 * v1.1.4
 	Fixed the Sticky Navigation bug
 	Changed Upsell Link
+	
+* v1.1.5
+	Made Layout changes
+	Bug fixes
 
 
 Good luck!
